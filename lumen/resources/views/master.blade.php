@@ -133,13 +133,14 @@ input[type="submit"]:hover{
 /* user list */
 .user-container{
   width: 80%;
-  background: #fff;
+  background-color: white !important;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .user-list{
 	display: block;
+	background: white;
 }
 
 .user_1{
@@ -152,31 +153,62 @@ input[type="submit"]:hover{
 
 
 /* button */
+.btn-list{
+	display : block;
+	margin-left: 10%
+}
 .btn{
+	display: inline-block;
 	background: #F15F43;
-	color: #ffffff;
-	padding: 9px 28px;
+	padding-top: 15px;
 	line-height:20px;
 	text-transform: uppercase;
 	border: none;
 	outline:none;
+	width: 20%;
+	height: 50px;
+	margin: 0% 0% 0% 5%;
+	text-align: center;
+	text-decoration: bold;
+	text-transform: uppercase;
+	font-size: 20pt;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 .btn:hover{
-	color:#ffffff;
-	background: #354B77;
+	background: #354B70;
 }
 
-.btn-default{
-	margin-top: 0%;
+.btn-active{
+	display: inline-block;
+	background: #F15F43;
+	padding-top: 15px;
+	line-height:20px;
+	text-transform: uppercase;
+	border: none;
+	outline:none;
+	width: 20%;
+	height: 50px;
+	margin: 0% 0% 0% 5%;
+	text-align: center;
+	text-decoration: bold;
+	text-transform: uppercase;
+	font-size: 20pt;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;	
+}
+
+.btn-list a{
+	color : white;
 }
 
 /* ribbon style */
 .h2 h2 {
-  color: #fff;
+  color: white;
   font-size: 1.2em;
   padding: 7px 9px 5px 27px;
   font-weight: 300;

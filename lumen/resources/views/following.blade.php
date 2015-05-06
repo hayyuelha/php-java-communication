@@ -1,9 +1,20 @@
 @extends('master')
 
 @section('title')
-Register
+Following
 @endsection
 @section('content')
+	<div class="btn-list">
+		<div class="btn">
+			<a href="{{url('home')}}"> All user </a>
+		</div>
+		<div class="btn-active">
+			<a href="{{url('following')}}"> Following </a>
+		</div>
+		<div class="btn">
+			<a href="{{url('follower')}}"> Follower </a>
+		</div>
+	</div>
 	<div class="user-container">	
 		<div class="ribbon-wrapper h2 ribbon-red">
 			<div class="ribbon-front">
