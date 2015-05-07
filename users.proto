@@ -1,3 +1,8 @@
+package proto;
+
+option java_package = "proto";
+option java_outer_classname = "UsersProtos";
+
 message User {
   required string username = 1;
   required string password = 2;
@@ -6,17 +11,6 @@ message User {
   required string phone = 5;
   optional string address = 6;
   optional string website = 7;
-
-  message Following {
-    repeated string username = 1;
-  }
-
-  message Follower {
-    repeated string username = 1;
-  }
-
-  optional Following following = 8;
-  optional Follower follower = 9;
 }
 
 message Users {
