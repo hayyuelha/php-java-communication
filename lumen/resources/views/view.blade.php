@@ -5,7 +5,7 @@ View User
 @endsection
 @section('btn')
 <div class="btn-active">
-	<a href="{{url('/')}}"> View User</a>
+	<a> View User </a>
 </div>
 <div class="btn">
 	<a href="{{url('/add')}}"> Add User </a>

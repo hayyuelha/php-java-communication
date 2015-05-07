@@ -8,7 +8,7 @@ Add User
 	<a href="{{url('/')}}"> View User</a>
 </div>
 <div class="btn-active">
-	<a href="{{url('/add')}}"> Add User </a>
+	<a> Add User </a>
 </div>
 @endsection
 @section('content')
@@ -23,16 +23,16 @@ Add User
 		<form role="form" method="POST" action="{{url('/add')}}">
 			<ul>
 				<li>
-					<input type="text" class="text" name="username" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" >
+					<input type="text" class="text" name="username" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required>
 				</li>
 				<li>
-					<input type="text" class="text" name="nama" value="Nama Lengkap" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama Lengkap';}" >
+					<input type="text" class="text" name="nama" value="Nama Lengkap" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nama Lengkap';}" required>
 				</li>
 				<li>
 					<input type="text" class="text" name="alamat" value="Alamat" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Alamat';}" >
 				</li>
 				<li>
-					<input type="text" class="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" >
+					<input type="text" class="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required>
 				</li>
 				<li>
 					<input type="text" class="text" name="situs" value="Situs" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Situs';}" >
@@ -41,7 +41,7 @@ Add User
 					<input type="text" class="text" name="telp" value="Nomor Telepon" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nomor Telepon';}" >
 				</li>
 				<li>
-					<input type="password" name = "password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+					<input type="password" name = "password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required>
 				</li>
 			</ul>
 			

@@ -3,6 +3,7 @@
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 
 class UserController extends Controller{
 	
@@ -46,9 +47,9 @@ class UserController extends Controller{
 		$user->phone = $request->telp;
 		$user->site = $request->situs;
 
-		$user->save();
+		// $user->save();
 
-		return view('/');
+		return redirect('/');
 	}
 
 

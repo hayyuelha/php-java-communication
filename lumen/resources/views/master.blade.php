@@ -152,10 +152,9 @@ input[type="submit"]:hover{
 }
 .btn{
 	display: inline-block;
-	background: #F15F43;
+	background: #00bffe;
 	padding-top: 15px;
 	line-height:20px;
-	text-transform: uppercase;
 	border: none;
 	outline:none;
 	width: 20%;
@@ -163,23 +162,26 @@ input[type="submit"]:hover{
 	margin: 0% 0% 0% 5%;
 	text-align: center;
 	text-decoration: bold;
-	text-transform: uppercase;
 	font-size: 20pt;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	
+	border-bottom-right-radius: 0.44em;
+    border-bottom-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
 }
 .btn:hover{
-	background: #354B70;
+	background: #ffa300;
 }
 
 .btn-active{
 	display: inline-block;
-	background: #F15F43;
+	background: #00bffe;
 	padding-top: 15px;
 	line-height:20px;
-	text-transform: uppercase;
 	border: none;
 	outline:none;
 	width: 20%;
@@ -187,12 +189,15 @@ input[type="submit"]:hover{
 	margin: 0% 0% 0% 5%;
 	text-align: center;
 	text-decoration: bold;
-	text-transform: uppercase;
 	font-size: 20pt;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;	
+	border-bottom-right-radius: 0.44em;
+    border-bottom-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
 }
 
 .btn-list a{
@@ -216,13 +221,9 @@ input[type="submit"]:hover{
 	-o-transition: 0.1s all;
 	background: #00bffe; 
 	border-bottom-right-radius: 0.44em;
-  -webkit-border-bottom-right-radius: 0.4em;
-  -o-border-bottom-right-radius: 0.4em;
-  -moz-border-bottom-right-radius: 0.4em;
-   border-bottom-left-radius: 0.4em;
-  -webkit-border-bottom-left-radius: 0.4em;
-  -o-border-bottom-left-radius: 0.4em;
-  -moz-border-bottom-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
 }
 
 .btn-register:hover{
