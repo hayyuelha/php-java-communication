@@ -1,17 +1,20 @@
-<?php
+<?php namespace App;
 
-class User{
-	public $url = 
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model{
+	// public $url = 
 
     public $username;
     public $name;
     public $password;
     public $address;
+    public $site;
     public $email;
     public $phone;
 
 
-    public static function save()
+    public function save()
     {
         $data = json_encode(array(
             'username' => $this->username,
@@ -20,7 +23,7 @@ class User{
             'address' => $this->address,
             'email' => $this->email,
             'phone' => $this->phone,
-        ))
+        ));
 
         // $ch = curl_init();
         // curl_setopt($ch, CURLOPT_URL, $this->url);
@@ -29,10 +32,10 @@ class User{
         // curl_setopt($ch, CURLOPT_PUT, 1);
         // curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 
-        return true;
+        // return true;
     }
 
-}
+};
 
 
 

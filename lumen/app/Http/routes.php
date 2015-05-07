@@ -11,24 +11,13 @@
 |
 */
 
-$app->get('/', function() {
-    return view('login');
-});
+// $app->get('/', function() {
+//     return view('view');
+// });
 
 
-$app->get('/register', function() {
-    return view('register');
-});
+$app->get('/', 'App\Http\Controllers\UserController@getView');
+$app->post('/view', 'App\Http\Controllers\UserController@showUser');
 
-$app->get('/home', function() {
-    return view('home');
-});
-
-$app->get('/following', function() {
-    return view('following');
-});
-
-$app->get('/follower', function() {
-    return view('follower');
-});
-
+$app->get('/add', 'App\Http\Controllers\UserController@getAdd');
+$app->post('/add', 'App\Http\Controllers\UserController@postAdd');

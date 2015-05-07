@@ -67,7 +67,7 @@ body  h1{
 
 /*---login-form1--------*/
 .login {
-  margin:10% auto 7%;
+  margin:5% auto 7%;
   width:30%;
   background: #fff;
   border-radius: 0.5em;
@@ -76,7 +76,7 @@ body  h1{
   -moz- border-radius: 0.5em;
 }
 form {
-	  padding: 10% 4% 6% 4%;
+	  padding: 10% 4% 0% 4%;
 }
 form li {
   list-style: none;
@@ -130,32 +130,25 @@ input[type="submit"]:hover{
 	background:#ffa300;
 }
 
-/* user list */
-.user-container{
-  width: 80%;
-  background-color: white !important;
+/* user detail */
+.detail{
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 10%;
+  padding-bottom: 10%;
 }
 
-.user-list{
-	display: block;
-	background: white;
+.detail h3 {
+  color: #000F2E;
+  font-size: 1.2em;
+  padding: 7px 9px 5px 27px;
+  font-weight: 300;
 }
-
-.user_1{
-	width:15%;
-	float:left;
-	background: #E5EAF3;
-	padding:4%;
-	margin: 4%;
-}
-
 
 /* button */
 .btn-list{
 	display : block;
-	margin-left: 10%
+	margin-left: 32%;
+	margin-top : 3%;
 }
 .btn{
 	display: inline-block;
@@ -206,6 +199,39 @@ input[type="submit"]:hover{
 	color : white;
 }
 
+.btn-register{
+	text-align: center;
+	font-size:20px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	padding:21px 20px;
+	width: 91%;
+	margin-bottom: 5%;
+	border: none;
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+	background: #00bffe; 
+	border-bottom-right-radius: 0.44em;
+  -webkit-border-bottom-right-radius: 0.4em;
+  -o-border-bottom-right-radius: 0.4em;
+  -moz-border-bottom-right-radius: 0.4em;
+   border-bottom-left-radius: 0.4em;
+  -webkit-border-bottom-left-radius: 0.4em;
+  -o-border-bottom-left-radius: 0.4em;
+  -moz-border-bottom-left-radius: 0.4em;
+}
+
+.btn-register:hover{
+	background:#ffa300;
+}
+
+.btn-register a{
+	color: white;
+}
 /* ribbon style */
 .h2 h2 {
   color: white;
@@ -402,6 +428,9 @@ body  h1{
 }
 
 </style>
+<div class="btn-list">
+		@yield('btn')
+</div>
 @yield('content')
 </body>
 </html>
