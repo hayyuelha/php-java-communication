@@ -5,6 +5,7 @@ com\proto\UserProtos$User$Follower$1.class
 com\proto\UserProtos$User$FollowingOrBuilder.class
 com\proto\UserProtos$User.class
 com\proto\UserProtos.class
+service\UserRestController.class
 com\proto\UserProtos$Users$1.class
 com\proto\UserProtos$User$Following.class
 com\proto\UserProtos$User$Builder.class
@@ -14,5 +15,7 @@ com\proto\UserProtos$Users.class
 com\proto\UserProtos$User$1.class
 com\proto\UserProtos$User$Following$Builder.class
 com\proto\UserProtos$UsersOrBuilder.class
+service\UserRepository.class
 com\proto\UserProtos$UserOrBuilder.class
 com\proto\UserProtos$User$Following$1.class
+service\ServerApplication.class
